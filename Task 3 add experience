@@ -1,0 +1,47 @@
+print("******************************************")
+print("*********(Welcome My App Lern)************")
+print("******************************************")
+
+admens = ["Aimer", "Ail", 'Rhma', "Osama", "Yaso", "Mena", "Mahmad"]
+
+name = input("What is your name :- ").capitalize()
+
+# Func Options & check in admen list 
+def options():
+    if name in admens:
+        print("Nice System Know Note Your Admen")
+        ask_operate = input("You Need (Add Admen New = A) or (Delete admen = D) : ").capitalize()
+        if ask_operate == "D":
+            Delete_in_Admen()
+        elif ask_operate == "A":
+            Add_in_Admen()
+        else:
+            print("Your Choice Wrong and Thank You Because Use My App . ")
+    else:
+        print("You are not admen : ")
+
+
+# Func add admens is in list
+def Add_in_Admen():
+    name_new = input("Input Name Addent : ")
+    admens.append(name_new) # add name in list "admans"
+    print(admens) 
+
+
+
+# Func Options
+def Delete_in_Admen():
+    name_delete = input("Input Name You Need Delete : ").capitalize()
+    if name_delete in admens:
+        admens.remove(name_delete)
+        print("Done")
+        print("List Admans" + admens)
+
+
+    # you can use (if name_delete not in admens:) ... in need writing style Because simple writing & editing
+    else: 
+        print("Not Exist in Admens Noun it")
+
+
+
+options()
