@@ -1,0 +1,27 @@
+print("---Age in Days Calculater---")
+ask_age = int(input("Enter your age in vears :  "))
+
+operation_months = 12  #you can dispensable var & i need arrage more
+operation_week = 4     #you can dispensable var & i need arrage more
+operation_day = 365    #you can dispensable var & i need arrage more
+operation_hours = 24   #you can dispensable var & i need arrage more
+operation_minutes = 60 #you can dispensable var & i need arrage more
+
+
+def calculater_age():
+    age = ask_age
+    months = age * operation_months
+    week = months * operation_week
+    day = age * operation_day
+    hours = day * operation_hours
+    minutes = hours * operation_minutes
+    x_stordge = [age, months , week, day, hours, minutes]
+    print(f"""
+    You have lived for {x_stordge[0]:,} age
+    You have lived for {x_stordge[1]:,} months
+    You have lived for {x_stordge[2]:,} week
+    You have lived for {x_stordge[3]:,} day
+    You have lived for {x_stordge[4]:,} hours
+    You have lived for {x_stordge[5]:,} minutes
+    """)
+calculater_age()
