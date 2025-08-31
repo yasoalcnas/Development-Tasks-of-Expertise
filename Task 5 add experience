@@ -1,0 +1,33 @@
+#Numper Trys 
+trys = 3
+
+#The Password Correct And We Use (((if)))
+mainPassword = "yaso123"
+
+#You Know Number [Password]
+IndexMainPassword = len(mainPassword)
+
+#Printing Number [Password]
+print(f"Number Password {IndexMainPassword}.")
+
+#Input Password
+InputPassword = input("Please Input Your Pasword : ")
+
+#The Loop Code ||| If Input Is Not Correct (Loop = True)
+while InputPassword != mainPassword: # True
+    
+    #Decreasing Number Try
+    trys -= 1
+    
+    #Printing Number Chance
+    print(f"Wrong Password, Residual > {'Last' if trys == 0 else trys} < Chance.")
+
+    #Input Your Password Try Again 
+    InputPassword = input("Please Try Input Your Pasword Correct : ")
+
+    #If var (Trys = -1 )---> The App Stoping & Simple and Nice Print Text
+    if trys == 0 :
+        print("All Trys Is Finised ""I am Sooorry |*-*| .")
+        break
+else: # Loop False ||| if InputPassword == mainPassword: -----> Simple and Nice Print Text
+    print("Correct Password.")
