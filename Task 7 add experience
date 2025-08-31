@@ -1,0 +1,29 @@
+#Range
+
+#myRange = range(1,101)
+
+#for number in myRange:
+#    print(number)
+
+#################################
+
+#Dictionary
+
+mySkills = {
+    "python" : "90",
+    "php" : "60",
+    "java": "50",
+    "dart": "40",
+    "html": "12"
+}
+#langoth = "python"
+#print(mySkills["python"])
+#print(mySkills[langoth])
+#print(mySkills.get('python'))
+
+for sk in mySkills:
+    #print(sk)
+    #print(f'My Progress in Lang {mySkills} Is : {mySkills[sk]}')
+    print(f'My Progress in Lang {mySkills} Is : {mySkills.get(sk)}')
+
+
