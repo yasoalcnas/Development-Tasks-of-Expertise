@@ -1,0 +1,39 @@
+#Empty List To Fill later
+myFavouritWeps = []
+
+maxWeps = 5
+
+while maxWeps > 0:
+    #Input Name Wepsite 
+    wep = input("Wepsite Name Withour https:// ")
+
+    #Add Input Wepsite In Stordge List
+    myFavouritWeps.append(f"https:// {wep.strip().lower()}")# strip = not space ||| lower = smal
+
+    #Remove Place in List
+    maxWeps -= 1
+
+    #Print Places List
+    print(f"Wepsite Added, {maxWeps} Places Left.")
+
+    #Print The list
+    print(myFavouritWeps)
+
+else:
+    print("Bookmark is Full, You Not Can Add More")
+
+#Check If List Is Not Emply
+if len(myFavouritWeps) > 0 :
+
+    #Sort The List 
+    myFavouritWeps.sort()
+
+    index = 0
+
+    print("Printing The List of Wepsite in Your Bookmark : ")
+
+    while index < len(myFavouritWeps) :
+
+        print(myFavouritWeps[index])
+
+        index += 1 # index = index + 1
